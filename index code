@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes app </title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="container">
+        <h1>My Notes App</h1>
+        <form action="">
+          <input type="text" id="note-title" placeholder="Note title" />
+          <textarea
+            name=""
+            id="note-text"
+            cols="30"
+            rows="10"
+            placeholder="Note details"
+          ></textarea>
+          <button id="add-btn">Add Note</button>
+        </form>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h2>Your Notes</h2>
+        <hr />
+        <button class="clear note-btn">Delete all notes</button>
+        <div id="notes">
+          <!-- <div class="note">
+            <p class="note-counter">Note 1</p>
+            <h3 class="note-title">Hello World</h3>
+            <p class="note-text">My name is Zino.</p>
+            <button class="note-btn">Delete Note</button>
+            <button class="note-btn edit-btn">Edit Note</button>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+==================css file==================
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #f7760d;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Start */
+header h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  line-height: 2;
+}
+
+header form {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+
+form > * {
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 1.6rem;
+  padding: 7px;
+  border: 1px solid #777;
+  border-radius: 3px;
+}
+
+::placeholder {
+  font-size: 1.4rem;
+}
+
+form button {
+  background-color: var(--color-sec);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  background-color: var(--color-primary);
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.note {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+
+.note-counter {
+  font-size: 1.4rem;
+  background-color: var(--dark-grey);
+  padding: 3px;
+  display: inline-block;
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.note-title {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+}
+
+.note-btn {
+  margin: 5px 0;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(27, 194, 255);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: var(--color-primary);
+}
+=======================
+
+
+js file ,please see my video:
+===================
